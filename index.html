@@ -7,7 +7,7 @@
 
     <!--- STYLESHEETS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" src="style.css">
+    <link rel="stylesheet" href="style.css">
 
     <!--- VENDOR SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@
     <header>
       <div class="container">
         <div class="row logo-img">
-          <img src="images/enviro-logo.png"></img>Logo goes here!
+          <img src="images/enviro-logo.png"></img>
         </div>
       </div>
     </header>
@@ -32,7 +32,7 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12" id="today-date">
             Date:
             <input type="date" name="Date">
           </div>
@@ -40,7 +40,7 @@
 
             <hr>
 
-        <div class="row">
+        <div class="row reference-row">
             <div class="col-md-6">
               Our Reference:
               <input type="text" name="Our Reference" value="Our Reference">
@@ -165,20 +165,20 @@
 
           <div class="row">
               <div class="col-md-4">
-                <ul>
+                <ul class="my-list">
                   <li>ERMI = E</li>
                   <li>HERTSMI-2 = H2</li>
                 </ul>
               </div>
               <div class="col-md-4">
-                <ul>
+                <ul class="my-list">
                   <li>Aspergelius Panel 15 = 15</li>
                   <li>Aspergelius Panel 10 = 10</li>
                   <li>Aspergelius Panel 6 = 6</li>
                 </ul>
               </div>
               <div class="col-md-4">
-                <ul>
+                <ul class="my-list">
                   <li>Endotoxin = ET</li>
                   <li>NGS Panel = NGS</li>
                   <li>Huam Specific Fecal Cont = HBAC</li>
@@ -200,9 +200,20 @@
           <div class="row">
             Service Requested By:
             <input type="text" name="email" placeholder="Requested By">
-            <button type="button" class="btn btn-default">Submit</button>
-            <button type="button" class="btn btn-default">Clear Form</button>
-            <button type="button" class="btn btn-default">Print Form</button>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-md-4">
+              <button type="button" class="btn btn-default">Submit</button>
+            </div>
+            <div class="col-md-4">
+              <button type="button" class="btn btn-default">Clear Form</button>
+            </div>
+            <div class="col-md-4">
+              <button type="button" class="btn btn-default">Print Form</button>
+            </div>
           </div>
 
           <hr>

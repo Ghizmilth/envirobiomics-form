@@ -1,0 +1,29 @@
+html,
+body {
+  height: 100%;
+  margin: 0 2% 0 2%;
+  text-align: center;
+}
+
+.logo-img {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.reference-row,
+#today-date {
+  text-align: center;
+  padding: 15px;
+}
+
+hr {
+  width: 80%;
+}
+
+.my-list {
+  list-style-type: none;
+}
+
+.your-contact-person {
+  width: 40%;
+}
