@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EnviroBiomics, Inc</title>
+
+    <!--- STYLESHEETS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" src="style.css">
+
+    <!--- VENDOR SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!--APPLICATION SCRIPTS -->
+    <script type="text/javascript" src="app.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="row logo-img">
+          <img src="images/enviro-logo.png"></img>Logo goes here!
+        </div>
+      </div>
+    </header>
+
+
+    <section>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            Date:
+            <input type="date" name="Date">
+          </div>
+        </div>
+
+            <hr>
+
+        <div class="row">
+            <div class="col-md-6">
+              Our Reference:
+              <input type="text" name="Our Reference" value="Our Reference">
+            </div>
+            <div class="col-md-6">
+              Your Reference:
+              <input type="text" name="Our Reference" value="Your Reference">
+            </div>
+        </div>
+      </div>
+
+    <hr>
+
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" class="form-check-input" name="inlineRadioOptions" id="optionsRadios1" value="option1" checked>
+              Pre-Remediation
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+          <label class="form-check-label">
+              <input class="form-check-input" type="radio" class="form-check-input" name="inlineRadioOptions" id="optionsRadios2" value="option2">
+              Progress
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+          <label class="form-check-label">
+              <input class="form-check-input" type="radio" class="form-check-input" name="inlineRadioOptions" id="optionsRadios3" value="option3">
+              Post-Remediation
+            </label>
+          </div>
+
+          <hr>
+
+          <div class="row">
+              <div class="col-md-6">
+                Your Contact Person:
+                <input type="text" name="contact-person" value="Your Contact Person">
+              </div>
+              <div class="col-md-6">
+                Sampled By:
+                <input type="text" name="sampled-by" value="Sampled By">
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-md-12">
+                <div class="col-md-4">
+                  Your Address:
+                  <input type="text" name="your-address" placeholder="Address">
+                </div>
+                City:
+                <input type="text" name="your-city" placeholder="City">
+                State:
+                <input type="text" name="your-state" placeholder="State">
+                Zip-Code:
+                <input type="text" name="your-zipcode" placeholder="Zip Code">
+              </div>
+              <div class="col-md-12">
+                <div class="col-md-4">
+                  Site Address:
+                  <input type="text" name="your-address" placeholder="Address">
+                </div>
+                City:
+                <input type="text" name="your-city" placeholder="City">
+                State:
+                <input type="text" name="your-state" placeholder="State">
+                Zip-Code:
+                <input type="text" name="your-zipcode" placeholder="Zip Code">
+              </div>
+          </div>
+
+
+
+          <div class="row">
+            Email:
+            <input type="text" name="email" placeholder="Email">
+            Telephone No.:
+            <input type="text" name="telephone" placeholder="Telephone Number">
+            Zip-Code:
+            <input type="text" name="transported-by" placeholder="Company or Person who transported it">
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+            Condition on Receipt:
+            <input type="text" name="condition" placeholder="Condition on Receipt">
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            Sample No.:
+            <input type="text" name="email" placeholder="Sample Number">
+            Sample Type:
+            <input type="text" name="telephone" placeholder="Sample Type">
+            Date:
+            <input type="date" name="transported-by" placeholder="Date">
+          </div>
+
+          <div class="row">
+            Sample Location:
+            <input type="text" name="email" placeholder="Sample Location">
+            Analysis Requested:
+            <input type="text" name="telephone" placeholder="Analysis Requested">
+            Lab No.:
+            <input type="date" name="transported-by" placeholder="Lab Number">
+          </div>
+
+          <div class="row">
+            Comments:
+            <input type="text" name="email" placeholder="Comments">
+          </div>
+
+          <div class="row">
+            Add New Sample
+            <button type="button" class="btn btn-default">+</button>
+          </div>
+
+          <hr>
+
+          <div class="row">
+              <div class="col-md-4">
+                <ul>
+                  <li>ERMI = E</li>
+                  <li>HERTSMI-2 = H2</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li>Aspergelius Panel 15 = 15</li>
+                  <li>Aspergelius Panel 10 = 10</li>
+                  <li>Aspergelius Panel 6 = 6</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li>Endotoxin = ET</li>
+                  <li>NGS Panel = NGS</li>
+                  <li>Huam Specific Fecal Cont = HBAC</li>
+                </ul>
+              </div>
+          </div>
+
+          <div class="row">
+            Sample Location:
+            <input type="text" name="email" placeholder="Sample Location">
+            Date:
+            <input type="date" name="date" placeholder="">
+            Time:
+            <input type="time" name="time" placeholder="">
+          </div>
+
+          <hr>
+
+          <div class="row">
+            Service Requested By:
+            <input type="text" name="email" placeholder="Requested By">
+            <button type="button" class="btn btn-default">Submit</button>
+            <button type="button" class="btn btn-default">Clear Form</button>
+            <button type="button" class="btn btn-default">Print Form</button>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            Contact Details<br>
+            David@EnviroBiomics.com<br>
+            Gianni@Envirobiomics.com<br>
+            Telephone: (210)-782-2803<br>
+            Reviewed and Revised 10/31/2017<br>
+            Form LAB-3
+          </div>
+
+
+
+
+    </section>
+
+
+  </body>
+</html>
