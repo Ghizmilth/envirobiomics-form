@@ -11,9 +11,18 @@ body {
 }
 
 .reference-row,
-#today-date {
+.today-date,
+.contact-sample,
+.your-address,
+.site-address,
+.contact-info,
+.condition,
+.sample-row,
+.sample-location,
+.comments,
+.new-sample {
   text-align: center;
-  padding: 15px;
+  padding: 1.3%;
 }
 
 hr {
@@ -24,6 +33,29 @@ hr {
   list-style-type: none;
 }
 
-.your-contact-person {
-  width: 40%;
+.your-contact-person,
+.sampled-by {
+  width: 30%;
+}
+
+.radio-inline {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.new-sample {
+  text-align: right;
+  margin-right: 10%;
+}
+
+.contact-sample {
+}
+
+.address-field {
+  width: 30%;
+}
+
+.comment-box {
+  height: 100px;
+  width: 60%;
 }
