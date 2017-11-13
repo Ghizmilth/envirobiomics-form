@@ -20,24 +20,21 @@
 
   <body>
     <header>
-      <div class="container">
-        <div class="row logo-img">
-          <img src="images/enviro-logo.png"></img>
-        </div>
+      <div class="row logo-img">
+        <img src="images/enviro-logo.png"></img>
       </div>
     </header>
 
 
     <form>
-        <div class="col-1 today-date">
+        <div class="col-0">
           <label>Date:
-            <input type="date" name="Date">
+            <input class="today-date" type="date" name="Date">
           </label>
         </div>
 
-          <br>
+          <hr>
 
-          <!-- <div class="row reference-row col-1"> -->
               <div class="col-2">
                 <label>
                  Our Reference:
@@ -49,8 +46,8 @@
                 <input type="text" name="Our Reference" placeholder="Your Reference" tabindex="2">
                 </label>
               </div>
-            <!-- </div> -->
 
+          <hr>
 
           <div class="col-2">
               <label>
@@ -99,7 +96,7 @@
                 </label>
           </div>
 
-
+  <hr>
               <div class="col-4 your-address">
                 <label>Your Address
                   <input class="address-field" type="text" name="your-address" placeholder="Address">
@@ -120,6 +117,8 @@
                 <input type="text" name="your-zipcode" placeholder="Zip Code">
                 </label>
               </div>
+
+                <hr>
 
               <div class="col-4 site-address">
                 <label>Site Address
@@ -142,6 +141,7 @@
                 </label>
               </div>
 
+  <hr>
 
               <div class="col-3 contact-info">
                 <label>Email
@@ -180,7 +180,7 @@
           </div>
           <div class="col-3">
             <label>Sample Date
-              <input type="date" name="transported-by" placeholder="Date">
+              <input class="today-date" type="date" name="transported-by" placeholder="Date">
             </label>
           </div>
 
@@ -208,13 +208,16 @@
             </label>
           </div>
 
+  <hr>
+
           <div class="col-1 new-sample">
             <label>
             Add New Sample
-            <button type="button" class="btn btn-default">+</button>
+            <button type="button" class="btn btn-new">+</button>
           </label>
           </div>
 
+  <hr>
 
               <div class="col-3">
                 <label class="my-list">
@@ -231,9 +234,9 @@
               </div>
               <div class="col-3">
                 <label class="my-list">
-                  Endotoxin = ET</li>
-                  NGS Panel = NGS</li>
-                  Huam Specific Fecal Cont = HBAC</li>
+                  Endotoxin = ET</br>
+                  NGS Panel = NGS</br>
+                  Huam Specific Fecal Cont = HBAC</br>
                 </label>
               </div>
 
@@ -247,12 +250,12 @@
           </div>
           <div class="col-3">
             <label>Date
-              <input class="sample-date" type="date" name="date" placeholder="">
+              <input class="today-date" type="date" name="date" placeholder="">
             </label>
           </div>
           <div class="col-3">
             <label>Time
-              <input class="sample-time" type="time" name="time" placeholder="">
+              <input class="today-date" type="time" name="time" placeholder="">
             </label>
           </div>
 
@@ -264,20 +267,21 @@
             </label>
           </div>
 
-        <div>
+
+
           <hr>
 
-          <div class="row">
-            <div class="col-md-4">
-              <button type="button" class="btn btn-default">Submit</button>
+
+            <div class="col-3">
+              <button type="button" class="btn-clear">Clear Form</button>
             </div>
-            <div class="col-md-4">
-              <button type="button" class="btn btn-default">Clear Form</button>
+            <div class="col-3">
+              <button type="button" class="btn-print">Print Form</button>
             </div>
-            <div class="col-md-4">
-              <button type="button" class="btn btn-default">Print Form</button>
+            <div class="col-3">
+              <button type="button" class="btn-submit">Submit</button>
             </div>
-          </div>
+
 
           <hr>
 

@@ -2,32 +2,16 @@ html,
 body {
   height: 100%;
   margin: 0 2% 0 2%;
-  text-align: center;
-  background: #ecf3f3;
 }
 
 .logo-img {
   margin-top: 2%;
   margin-bottom: 2%;
+  text-align: left;
 }
 
-/*.reference-row,*/
-/*.today-date,
-.contact-sample,
-.your-address,
-.site-address,
-.contact-info,
-.condition,
-.sample-row,
-.sample-location,
-.comments,
-.new-sample {
-  text-align: center;
-  padding: 1.3%;
-}*/
-
 .today-date {
-  border: 1px solid #e4e4e4;
+  border: 1.5px solid #e4e4e4;
 }
 
 .sample-date,
@@ -37,7 +21,10 @@ body {
 }
 
 hr {
-  width: 80%;
+  width: 100%;
+  height: 5px;
+  background: #e4e4e4;
+  border: none;
 }
 
 input,
@@ -65,7 +52,7 @@ textarea {
 
 label {
   display: block;
-  padding: 20px 20px 10px;
+  padding: 12px 12px 8px;
   vertical-align: top;
   font-size: 14px;
   font-weight: 600;
@@ -79,27 +66,48 @@ form {
   margin: 30px;
   overflow: hidden;
   background: #fff;
-  border: 1px solid #e4e4e4;
+  border: 3px solid #e4e4e4;
   border-radius: 5px;
   font-size: 0;
+  width: 70%;
+  margin: 0 auto;
 }
 
 button {
-  margin: 10px 0 10px 0;
+  border: 1px solid #e4e4e4;
+  font-size: 14px;
+  color: #fff;
+  padding: 1em;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.btn-submit,
+.btn-print,
+.btn-clear {
+}
+
+.btn-submit {
+  background: #5fb760;
+}
+
+.btn-clear {
+  background: #efac56;
+}
+
+.btn-print {
+  background: #5fc0dd;
+}
+
+.btn-new {
+  background: #5fc0dd;
 }
 
 .my-list {
   list-style-type: none;
   font-size: 10px;
-}
-
-.radio-inline {
-}
-
-.your-contact-person,
-.sampled-by,
-.requested-by {
-  /*width: 30%;*/
 }
 
 .radio-inline {
@@ -115,18 +123,12 @@ button {
 .contact-sample {
 }
 
-/*.address-field {
-  width: 30%;
-}*/
-
 .comment-box {
-  /*height: 100px;
-  width: 60%;*/
   overflow: scroll;
 }
 
-li {
-  font-size: 10px;
+.col-0 {
+  border: none;
 }
 
 div.col1,
