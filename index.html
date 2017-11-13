@@ -6,12 +6,12 @@
     <title>EnviroBiomics, Inc</title>
 
     <!--- STYLESHEETS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="style.css">
 
     <!--- VENDOR SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 
     <!--APPLICATION SCRIPTS -->
     <script type="text/javascript" src="app.js"></script>
@@ -28,76 +28,99 @@
     </header>
 
 
-    <section>
+    <form>
+      <div class="col-1">
+          <div class="today-date">
+            <label>Date:
+            <input type="date" name="Date">
+            </label>
+        </div>
+      </div>
 
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 today-date">
-                Date:
-                <input type="date" name="Date">
-              </div>
-          </div>
+          <br>
 
-          <hr>
+          <!-- <div class="row reference-row col-1"> -->
+              <div class="col-2">
+                <label>
+                 Our Reference:
+                <input type="text" name="Our Reference" placeholder="Our Reference" tabindex="1">
+                </label>
+              </div>
+              <div class="col-2">
+                <label>Your Reference:
+                <input type="text" name="Our Reference" placeholder="Your Reference" tabindex="2">
+                </label>
+              </div>
+            <!-- </div> -->
 
-          <div class="row reference-row">
-              <div class="col-md-6">
-                Our Reference:
-                <input type="text" name="Our Reference" value="Our Reference">
-              </div>
-              <div class="col-md-6">
-                Your Reference:
-                <input type="text" name="Our Reference" value="Your Reference">
-              </div>
+
+          <div class="col-2">
+              <label>
+                Name
+                <input placeholder="What is your full name?" id="name" name="name" tabindex="1">
+              </label>
             </div>
-          </div>
+            <div class="col-2">
+              <label>
+                Company
+                <input placeholder="Where do you currently work?" id="company" name="company" tabindex="2">
+              </label>
+            </div>
 
           <hr>
 
+        <div class="col-3">
           <label class="radio-inline">
             <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
             Pre-Remediation
           </label>
+        </div>
+        <div class="col-3">
           <label class="radio-inline">
             <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
             Progress
           </label>
+        </div>
+        <div class="col-3">
           <label class="radio-inline">
             <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
             Post-Remediation
           </label>
-
-
+        </div>
 
           <hr>
 
-          <div class="row contact-sample">
-                Your Contact Person:
+          <div class="row contact-sample col-4">
+                <label>Your Contact Person:
                 <input class="your-contact-person" type="text" name="contact-person" value="Your Contact Person">
-                Sampled By:
+                </label>
+          </div>
+          <div class="col-4">
+                <label>Sampled By:
                 <input class="sampled-by" type="text" name="sampled-by" value="Sampled By">
+                </label>
           </div>
 
           <div class="row">
               <div class="col-md-12 your-address">
-                Your Address:
+                <label>Your Address:</label>
                 <input class="address-field" type="text" name="your-address" placeholder="Address">
-                City:
+                <label>City:</label>
                 <input type="text" name="your-city" placeholder="City">
-                State:
+                <label>State:</label>
                 <input type="text" name="your-state" placeholder="State">
-                Zip-Code:
+                <label>Zip-Code:</label>
                 <input type="text" name="your-zipcode" placeholder="Zip Code">
               </div>
 
               <div class="col-md-12 site-address">
-                Site Address:
+                <label>Site Address:</label>
                 <input class="address-field" type="text" name="your-address" placeholder="Address">
-                City:
+                <label>City:</label>
                 <input type="text" name="your-city" placeholder="City">
-                State:
+                <label>State:</label>
                 <input type="text" name="your-state" placeholder="State">
-                Zip-Code:
+                <label>Zip-Code:</label>
                 <input type="text" name="your-zipcode" placeholder="Zip Code">
               </div>
           </div>
@@ -105,17 +128,17 @@
 
 
           <div class="row contact-info">
-            Email:
+            <label>Email:</label>
             <input type="text" name="email" placeholder="Email">
-            Telephone No.:
+            <label>Telephone No.:</label>
             <input type="text" name="telephone" placeholder="Telephone Number">
-            Transported By:
+            <label>Transported By:</label>
             <input type="text" name="transported-by" placeholder="Company or Person who transported it">
           </div>
 
           <div class="row condition">
             <div class="col-lg-12">
-            Condition on Receipt:
+            <label>Condition on Receipt:</label>
             <input type="text" name="condition" placeholder="Condition on Receipt">
             </div>
           </div>
@@ -123,27 +146,27 @@
           <hr>
 
           <div class="row sample-row">
-            Sample No.:
+            <label>Sample No.:</label>
             <input type="text" name="email" placeholder="Sample Number">
-            Sample Type:
+            <label>Sample Type:</label>
             <input type="text" name="telephone" placeholder="Sample Type">
-            Date:
+            <label>Date:</label>
             <input type="date" name="transported-by" placeholder="Date">
           </div>
 
           <div class="row sample-location">
-            Sample Location:
+            <label>Sample Location:</label>
             <input type="text" name="email" placeholder="Sample Location">
-            Analysis Requested:
+            <label>Analysis Requested:</label>
             <input type="text" name="telephone" placeholder="Analysis Requested">
-            Lab No.:
+            <label>Lab No.:</label>
             <input type="date" name="transported-by" placeholder="Lab Number">
           </div>
 
           <div class="row comments">
-            Comments:
-            <input class="comment-box" type="text" name="email" placeholder="Comments">
-          </div>
+            <label>Comments:</label>
+            <textarea class="comment-box" type="text" name="field1" placeholder="What else should we know?">
+          </textarea>
 
           <div class="row new-sample">
             Add New Sample
@@ -178,21 +201,22 @@
           <hr>
 
           <div class="row">
-            Sample Location:
+            <label>Sample Location:</label>
             <input class="sample-loc" type="text" name="email" placeholder="Sample Location">
-            Date:
+            <label>Date:</label>
             <input class="sample-date" type="date" name="date" placeholder="">
-            Time:
+            <label>Time:</label>
             <input class="sample-time" type="time" name="time" placeholder="">
           </div>
 
           <hr>
 
           <div class="row">
-            Service Requested By:
+            <label>Service Requested By:</label>
             <input class="requested-by" type="text" name="email" placeholder="Requested By">
           </div>
 
+        <div>
           <hr>
 
           <div class="row">
@@ -209,6 +233,7 @@
 
           <hr>
 
+</form>
           <div class="row">
             Contact Details<br>
             David@EnviroBiomics.com<br>
@@ -221,7 +246,7 @@
 
 
 
-    </section>
+
 
 
   </body>
